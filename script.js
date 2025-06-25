@@ -54,6 +54,10 @@ document.getElementById('scroll-up').addEventListener('click', function() {
         behavior: 'smooth' // Optional: adds a smooth scrolling effect
     });
 })
+
+document.getElementById('to-contact').addEventListener('click', function() {
+    document.getElementById('contacts-section').scrollIntoView({behavior: 'smooth'});
+});
 window.addEventListener('scroll', function() {
     const documentHeight = document.documentElement.scrollHeight;
     const viewportHeight = window.innerHeight;
